@@ -3,12 +3,13 @@ import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
 import { getInitials, avatarColor } from '@/lib/utils'
-import { LayoutDashboard, Users, Activity, ArrowLeftRight, LogOut, Building2 } from 'lucide-react'
+import { LayoutDashboard, Users, Activity, ArrowLeftRight, LogOut, UserCheck } from 'lucide-react'
 import type { Profile } from '@/types'
 
 const NAV = [
   { href: '/dashboard',  label: 'Dashboard',   icon: LayoutDashboard },
   { href: '/groups',     label: 'Groups',       icon: Users },
+  { href: '/friends',    label: 'Friends',      icon: UserCheck },
   { href: '/activity',   label: 'Activity',     icon: Activity },
   { href: '/settle',     label: 'Settle up',    icon: ArrowLeftRight },
 ]
